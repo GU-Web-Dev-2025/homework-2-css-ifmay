@@ -82,9 +82,10 @@ html {
 }
 
 .sidebar img {
-	margin: 15px;
-	border-radius: 50%;
-	border: 3px solid #5c4b3b;
+    width: 250px;           
+    height: 250px;       
+    border-radius: 50%;
+    border: 3px solid #5c4b3b;
 }
 
 .sidebar img:hover {
