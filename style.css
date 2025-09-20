@@ -1,0 +1,197 @@
+/* 
+Isabelle May
+CPSC 332
+Homework 2 
+September 20, 2025 
+*/
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f6f3ef;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+/* EXTRA CREDIT custom font */
+h1, h2, h3 {
+  font-family: Georgia, serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* navigation bar */
+.banner {
+	display: flex;
+	justify-content: center;
+	background-color: #2c4b36;
+	padding: 12px;
+	margin: 0;
+}
+
+.banner li {
+	list-style: none;
+	margin: 0 20px;
+}
+
+.banner li a {
+	color: #f6f3ef;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 8px;
+	border-radius: 6px;
+}
+
+.banner li a:hover {
+	background-color: #8c7b6b;
+}
+
+/* container layout */
+.container {
+	display: flex;
+	gap: 20px;
+	padding: 0 10px;
+}
+
+/* sidebar */
+.sidebar {
+	flex: 1;
+	/* EXTRA CREDIT special effect */
+	background: linear-gradient(to bottom, #e6ebe4, #356859);
+	padding: 20px;
+	border-radius: 15px;
+	text-align: left;
+	/* EXTRA CREDIT special effect */
+	box-shadow: 0 4px 12px #e6ebe4;
+}
+
+.sidebar h1 {
+	margin: 10px 0;
+	color: #2c4b36;
+	font-size: 25px;
+}
+
+.sidebar h3 {
+    font-weight: normal;
+	font-size: 15px;
+	margin: 5px 0 15px;
+	color: #5c4b3b;
+}
+
+.sidebar img {
+	margin: 15px;
+	border-radius: 50%;
+	border: 3px solid #5c4b3b;
+}
+
+.sidebar img:hover {
+	transform: scale(1.05);
+}
+
+/* main content */
+.main {
+	flex: 3;
+	background-color: #f6f3ef;
+	padding: 25px;
+	border-radius: 15px;
+}
+
+.main section {
+	background-color: #e6ebe4;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 12px;
+}
+
+h2 {
+	color: #356859;
+	border-bottom: 2px solid #8c7b6b;
+	padding-bottom: 5px;
+}
+
+h3 {
+	color: #5c4b3b;
+}
+
+/* profile section */
+.profile p,
+.profile ul {
+	line-height: 1.5;
+}
+
+/* info tables (career & education) */
+.info-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	background-color: #f6f3ef;
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.info-table th,
+.info-table td {
+	padding: 12px 15px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.info-table tr:nth-child(odd) {
+	background-color: #809880;
+}
+
+.info-table tr:nth-child(even) {
+	background-color: #f6f3ef;
+}
+
+.title,
+.role-org {
+	font-weight: bold;
+	color: #2c4b36;
+}
+
+.dates {
+	font-style: italic;
+	font-size: 12px;
+	color: #2c4b36;
+}
+
+/* links */
+a {
+	color: #5C3A21;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #f6f3ef;
+}
+
+/* interests section */
+ol li {
+	margin-bottom: 13px;
+	font-size: 13px;
+}
+
+ol li ul {
+	margin-top: 5px;
+	margin-left: 1px;
+}
+
+.interests-images {
+	display: flex;
+	gap: 15px;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+.interests-images img {
+	border-radius: 12px;
+}
+
+.interests-images a:hover img {
+	transform: scale(1.05);
+}

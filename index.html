@@ -1,66 +1,292 @@
 <!-- 
-Isabelle May
-CPSC 332
-Homework 1 
-September 8, 2025
--->
-
+   Isabelle May
+   CPSC 332
+   Homework 2 
+   September 20, 2025
+   -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isabelle's Cover Letter</title>
-    <link rel="shortcut icon" href="pics/favicon.png">
-
-    <style>
-        .banner {
-            display: flex;
-            background: purple;
-            top: 0;
-            width: 100%;
-            list-style-type: none; 
-        }
-
-        .banner li a {
-            color: white;
-            font-size: 20px;
-            padding: 10px 15px;
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
-    <ul class="banner">
-        <li><a href="index.html">Introduction</a></li>
-        <li><a href="CareerSummary.html">Career Summary</a></li>
-        <li><a href="Education.html">Education & Qualifications</a></li>
-        <li><a href="Interests.html">Interests & Hobbies</a></li>
-    </ul>
-
-    <h1>Isabelle May</h1>
-    <h3>Computer Science | Gonzaga University | Class of 2026</h3>
-
-    <h2>Summary</h2>
-    <div style="display: flex; gap: 20px; max-width: 900px;">
-    <p>
-        Hi, I’m Isabelle May, a Computer Science student at Gonzaga University with a concentration in Data Science. 
-        I’m a curious and driven problem-solver with hands-on experience in software development, data analytics, and
-        project management. I’m especially passionate about building data-driven tools and applications that improve 
-        business insights and decision-making. Outside the classroom, you’ll often find me skiing, hiking, camping, 
-        or enjoying practically anything outdoors. I’d love to connect!
-    </p>
-    <img src="pics/headshot.jpg" alt="Isabelle May" width="175" height="175">
-    </div>
-
-    <h2>Skills</h2>
-    <ul>
-        <li>Programming Languages: Python, Java, C#, SQL, JavaScript, HTML</li>
-        <li>Frameworks & Tools: .NET, Git, Azure Functions, Visual Studio, Docker</li>
-        <li>Data & Analytics: Power BI, ETL, Data Modeling, Database Management, Data Cleaning, Transforming, and Modeling</li>
-        <li>Computer Science Fundamentals: Object Oriented Programming, Algorithms, Data Structures, Software Development</li>
-    </ul>
-        <p><a href="CareerSummary.html#roles">Jump to work experiences</a></p>
-
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Isabelle May Portfolio</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="shortcut icon" href="pics/favicon.png">
+   </head>
+   <body>
+      <!-- navigation bar -->
+      <nav>
+         <ul class="banner">
+            <li><a href="#career">Career</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#interests">Interests</a></li>
+         </ul>
+      </nav>
+      <section class="container">
+         <!-- side bar -->
+         <div class="sidebar">
+            <h1>Isabelle May</h1>
+            <h3>Computer Science Student at Gonzaga University</h3>
+            <a href="https://www.linkedin.com/in/ifmay" target="_blank">
+            <img src="pics/headshot.jpg" alt="Isabelle May" width="150" height="150"></a>
+            <section class="profile">
+               <h2>Summary</h2>
+               <p>
+                  Hi, I’m Isabelle May, an honors computer science student at Gonzaga University with a concentration in Data Science and minors in mathematics and Hogan entrepreneurial leadership.
+                  I’m a curious and driven problem-solver with hands-on experience in software development, data analytics, and
+                  project management. I’m especially passionate about building data-driven tools and applications that improve 
+                  business insights and decision-making. Outside the classroom, you’ll often find me skiing, hiking, camping, 
+                  or enjoying practically anything outdoors. I’d love to connect!
+               </p>
+               <h2>Skills</h2>
+               <ul>
+                  <li>Programming Languages: Python, Java, C#, SQL, JavaScript, HTML</li>
+                  <li>Frameworks & Tools: .NET, Git, Azure Functions, Visual Studio, Docker</li>
+                  <li>Data & Analytics: Power BI, ETL, Data Modeling, Database Management</li>
+                  <li>Computer Science Fundamentals: OOP, Algorithms, Data Structures, Software Development</li>
+               </ul>
+            </section>
+         </div>
+         <!-- main content area -->
+         <div class="main">
+            <section id="career">
+               <h2>Career Summary</h2>
+               <table class="info-table">
+                  <tr>
+                     <th class="title">Data Engineering Intern | <a href="https://www.bnbuilders.com/">BNBuilders</a></th>
+                     <td class="dates">May 2025 – Present</td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">
+                        <ul>
+                           <li>Led upgrades to the company Attendance App used by 1,000+ employees, automating training tracking, QR-code event check-ins, and feedback analytics, saving the HR team 30+ hours per month.</li>
+                           <li>Designed and optimized SQL Server data pipelines and ASP.NET web app features to automate data flows and reduce manual reporting errors.</li>
+                           <li>Built C# Azure Functions and Power BI dashboards giving executives visibility into KPIs for HR, Risk & Contracts, and equipment metrics.</li>
+                           <li>Partnered with 10+ stakeholders to deliver scalable, user-friendly tools that improved operational efficiency and strategic decision-making.</li>
+                        </ul>
+                     </td>
+                  </tr>
+                  <tr class="spacer-row">
+                     <td colspan="2"></td>
+                  </tr>
+               </table>
+               <table class="info-table">
+                  <tr>
+                     <th class="title">Program Director | <a href="https://www.gonzaga.edu/school-of-business-administration/hogan-leadership-program/nvl">New Venture Lab</a></th>
+                     <td class="dates">May 2024 – Present</td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">
+                        <ul>
+                           <li>Leading a student-run business consulting firm, working with 8-11 entrepreneurs each semester through a structured three-phase scope and achieving a 97% satisfaction rate from entrepreneurs over the past five semesters.</li>
+                           <li>Supervising and advising 8-11 project managers and teams of 5-7 Gonzaga students per semester, providing mentorship in a fast-paced environment to ensure successful project outcomes.</li>
+                           <li>Oversee project intake and execution by reviewing 50+ entrepreneur and 150+ student applications, coordinating with 20 board members to deliver a practical, positive learning experience for 75+ students per semester.</li>
+                           <li>Previously served as a consultant and project manager, gaining experience that continues to inform my guidance of teams in data analysis, database design, web development, product development, demographic research, advertising, and SEO analysis.</li>
+                        </ul>
+                     </td>
+                  </tr>
+                  <tr class="spacer-row">
+                     <td colspan="2"></td>
+                  </tr>
+               </table>
+               <table class="info-table">
+                  <tr>
+                     <th class="title">Computer Science Teacher Assistant | <a href="https://www.gonzaga.edu/school-of-engineering-applied-science/degrees-and-programs/computer-science">Gonzaga University Computer Science</a></th>
+                     <td class="dates">Aug 2024 – May 2025</td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">
+                        <ul>
+                           <li>Assisted students with programming, data structures, and algorithms.</li>
+                           <li>Graded assignments and exams, providing feedback, and supporting learning during busy drop-in hours.</li>
+                        </ul>
+                     </td>
+                  </tr>
+                  <tr class="spacer-row">
+                     <td colspan="2"></td>
+                  </tr>
+               </table>
+               <table class="info-table">
+                  <tr>
+                     <th class="title">Hogan Student | <a href="https://www.gonzaga.edu/school-of-business-administration/hogan-leadership-program">Hogan Entrepreneurial Leadership Program</a></th>
+                     <td class="dates">May 2023 – Present</td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">
+                        <ul>
+                           <li>Learning entrepreneurship and leadership through workshops and mentorship.</li>
+                           <li>Designed “Fair Share,” a B2B platform providing anonymized spending insights for banks, leveraging data science and market research.</li>
+                        </ul>
+                     </td>
+                  </tr>
+                  <tr class="spacer-row">
+                     <td colspan="2"></td>
+                  </tr>
+               </table>
+               <table class="info-table">
+                  <tr>
+                     <th class="title">University Honors Student | <a href="https://www.gonzaga.edu/academics/undergraduate/honors-program">Gonzaga University Honors College</a></th>
+                     <td class="dates">May 2023 – Present</td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">
+                        <ul>
+                           <li>Engaging in an interdisciplinary curriculum emphasizing creativity, critical thinking, and social responsibility.</li>
+                           <li>Collaborating on projects that foster global awareness and intellectual growth.</li>
+                        </ul>
+                     </td>
+                  </tr>
+                  <tr class="spacer-row">
+                     <td colspan="2"></td>
+                  </tr>
+               </table>
+               <table class="info-table">
+                  <tr>
+                     <th class="title">University Ministry Search Retreat Student Assistant | <a href="https://www.gonzaga.edu/about/our-mission-jesuit-values/university-ministry">Gonzaga University Ministry</a></th>
+                     <td class="dates">Aug 2025 – Present</td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">
+                        <ul>
+                           <li>Supporting the long-standing Search retreat program that invites juniors and seniors to deepen community and faith.</li>
+                           <li>Leading collaboration with Campus Ministry to plan and execute retreats that build engagement and belonging.</li>
+                           <li>Directing communications with 75+ participants and volunteers, ensuring clarity and organization before and during events.</li>
+                           <li>Overseeing logistics for 3+ retreats, including scheduling, meals, and daily operations, to deliver impactful experiences.</li>
+                        </ul>
+                     </td>
+                  </tr>
+                  <tr class="spacer-row">
+                     <td colspan="2"></td>
+                  </tr>
+               </table>
+               <table class="info-table">
+                  <tr>
+                     <th class="title">Youth Advisory Board Member | <a href="https://yacenter.org/">Young Americans Center for Financial Education</a></th>
+                     <td class="dates">Aug 2014 – May 2022</td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">
+                        <ul>
+                           <li>Presenter at summer camps, elementary school events, and Denver Startup Week: 2017-2021</li>
+                           <li>Youth Board Member: 2019-2020</li>
+                           <li>Testified at State Capital on behalf of Senate Bill 103, the “Lemonade Bill”: 2019</li>
+                           <li>Founder/CEO of Charming Wine Charms: 2015-2018 (average annual profits of $5,000; product appeared on Shark Tank through Jack’s Stands: 2016)</li>
+                           <li>Founder/CEO of Knots Jewelry: 2019-2020</li>
+                           <li>Jack’s Stands mall kiosk manager for three holiday seasons (selling products made by local Colorado young entrepreneurs): 2017-2019</li>
+                           <li>Judge’s Panel Participant for Annual Youth Entrepreneur Competition: 2018</li>
+                           <li>Named Young Entrepreneur of the Year and re-opened Rocky Mountain Hospital for Children’s gift shop with YACFE and business mentor/hospital CEO Maureen Tarrant: 2015-2017</li>
+                        </ul>
+                     </td>
+                  </tr>
+                  <tr class="spacer-row">
+                     <td colspan="2"></td>
+                  </tr>
+               </table>
+            </section>
+            <section id="education">
+               <h2>Education & Qualifications</h2>
+               <h3>Education</h3>
+               <table class="info-table">
+                  <tr>
+                     <th class="role-org">Bachelor of Science in Computer Science | Gonzaga University</th>
+                     <td class="dates">Aug 2022 – May 2026</td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">
+                        <ul>
+                           <li>Concentration: Data Science</li>
+                           <li>Minors: Mathematics & Hogan Entrepreneurial Leadership</li>
+                           <li>University Honors Program</li>
+                        </ul>
+                     </td>
+                  </tr>
+                  <tr class="spacer-row">
+                     <td colspan="2"></td>
+                  </tr>
+               </table>
+               <table class="info-table">
+                  <tr>
+                     <th class="role-org">High School Diploma | Holy Family High School</th>
+                     <td class="dates">Aug 2018 – May 2022</td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">
+                        <p>Graduated with High Honors. Treasurer of the National Honor Society. Volunteer tutor for elementary school students. Learned Spanish (proficient). Varsity lacrosse & soccer team captain, developing leadership and teamwork skills.</p>
+                     </td>
+                  </tr>
+                  <tr class="spacer-row">
+                     <td colspan="2"></td>
+                  </tr>
+               </table>
+               <h3>Professional Qualifications</h3>
+               <table class="info-table">
+                  <tr>
+                     <th class="role-org">Advanced Power BI: DAX Language, Formulas, and Calculations | LinkedIn Learning</th>
+                     <td class="dates">May 2025</td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">
+                        <p>Credential in advanced Power BI techniques, focusing on DAX functions, formulas, and data modeling.</p>
+                     </td>
+                  </tr>
+                  <tr class="spacer-row">
+                     <td colspan="2"></td>
+                  </tr>
+               </table>
+               <table class="info-table">
+                  <tr>
+                     <th class="role-org">Object Oriented Programming with C# | LinkedIn Learning</th>
+                     <td class="dates">May 2025</td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">
+                        <p>Certificate of completion covering OOP concepts and C# programming fundamentals.</p>
+                     </td>
+                  </tr>
+                  <tr class="spacer-row">
+                     <td colspan="2"></td>
+                  </tr>
+               </table>
+            </section>
+            <section id="interests">
+               <h2>Interests & Hobbies</h2>
+               <ol>
+                  <li>
+                     Hiking and Outdoor Adventures
+                     <ul>
+                        <li>I've climbed 9 of Colorado’s 14,000-foot mountains.</li>
+                        <li>I enjoy hiking, camping, backpacking, and basically anything else outdoors.</li>
+                        <li>My favorite hike in Colorado is coincidentally named Lake Isabelle (pictured below with my dog, Charlie)</li>
+                     </ul>
+                  </li>
+                  <li>
+                     Skiing
+                     <ul>
+                        <li>I've been skiing since age 3 on the Colorado slopes and at Schweitzer while at school.</li>
+                        <li>I logged 25 days on the slopes last season!</li>
+                     </ul>
+                  </li>
+                  <li>
+                     Traveling and Cultural Experiences
+                     <ul>
+                        <li>I've traveled to 17 different countries and enjoy learning about new cultures, foods, and languages through immersive travel.</li>
+                        <li>I attended a cultural exchange camp in Singapore at age 14.</li>
+                        <li>When I studied abroad last summer, I explored 19 cities in 6 weeks!
+                     </ul>
+               </ol>
+               <div class="interests-images">
+                  <a href="https://www.alltrails.com/trail/us/colorado/lake-isabelle-via-pawnee-pass-trail--2" target="_blank">
+                  <img src="pics/charlie.png" alt="Hiking with Charlie" width="165" height="225">
+                  </a>
+                  <a href="https://www.breckenridge.com/" target="_blank">
+                  <img src="pics/skiing.jpg" alt="Skiing" width="165" height="225">
+                  </a>
+                  <a href="https://en.wikipedia.org/wiki/Croatia" target="_blank">
+                  <img src="pics/traveling.png" alt="Traveling in Europe" width="165" height="225">
+                  </a>
+               </div>
+            </section>
+         </div>
+      </section>
+   </body>
 </html>
